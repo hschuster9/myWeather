@@ -94,9 +94,9 @@ input[type='text']{
 #showWeather {
   width: 40%;
   margin:auto;
-  background-color: #e6e6fa;
-  color: #003366;
-  border-radius: 18px;
-  background: url('https://openclipart.org/image/2400px/svg_to_png/14706/Anonymous-simple-weather-symbols-5.png') no-repeat;
-  background-size: cover;
+  /*background-color: #e6e6fa;*/
+  color: #191970;
+  border-radius: 10px;
+  background: url('https://spaceplace.nasa.gov/review/blue-sky/bluesky.en.png') no-repeat;
+  background-size: auto;
 }
