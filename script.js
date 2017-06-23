@@ -27,7 +27,7 @@ function getWeather(){
     })
 
   } else {
-    $("#error").html("<div>City field required</div>")
+    $("#error").html("<div class='alert alert-danger' id='errorCity'><a href='' class='close' data-dismiss='alert' aria-label='close'>&times</a>City field required</div>")
   }
 }
 
@@ -38,10 +38,11 @@ function showResults(data){
   var iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";
 
   return "<h4>"+data.name+"</h4>"+
-
-      "<p>Condition: " +data.weather[0].description+"</p>"+
-      "<p>Temperature: "+data.main.temp+" &deg;F</p>"+
-      "<p>Humidity: " +data.main.humidity+"</p>"+
-      "<p>Wind: " +data.wind.speed+"mph</p>"
+          "<p>Condition: " +data.weather[0].description+"</p>"+
+          "<p>Temperature: "+data.main.temp+" &deg;F</p>"+
+          "<p>High: "+data.main.temp_max+" &deg;F</p>"+
+          "<p>Low: "+data.main.temp_min+" &deg;F</p>"+
+          "<p>Humidity: " +data.main.humidity+"%</p>"+
+          "<p>Wind: " +data.wind.speed+"mph</p>"
 
 }

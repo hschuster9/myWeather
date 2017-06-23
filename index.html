@@ -49,14 +49,16 @@
       <h2 class="text-center" style="font-size:25px; font-weight: 300;">Get Current Weather for Any City</h2>
     </div>
 
+
     <div class="container">
       <div class="row" >
         <div class="col-md-12">
           <h3 class="text-center text-primary" style="color: #999999; margin-top: 80px; font-size: 16px;">Search Cities</h3>
+          <span id="error" class="text-center"></span>
         </div>
 
         <div class="row form-group form-inline" id="citySearch">
-          <input type="text" class="form-control" id="city" name="city" placeholder="city name">
+          <input type="text" class="form-control" id="city" name="city" placeholder="city name" style="margin-top:5px;">
           <button type="button" id="submitCity" class="btn btn-primary">
             <span class="glyphicon glyphicon-search"></span>
           </button>
@@ -65,9 +67,19 @@
       </div>
     </div>
 
-    <div id="error"></div>
+
     <div class="icon"></div>
     <div id="showWeather"></div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <p style='color=white'>Copright &copy; HS</p>
+        </div>
+
+      </div>
+
+    </div>
 
 
 

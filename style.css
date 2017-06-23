@@ -74,3 +74,14 @@ input[type='text']{
   height: 35px;
   font-weight: bold;
 }
+
+#errorCity{
+  width: 25%;
+  margin: auto;
+  text-align: center;
+
+}
+
+.footer {
+
+}
