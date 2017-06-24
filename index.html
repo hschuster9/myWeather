@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
   <body>
     <nav class="navbar navbar-default" id="nav_bar">
@@ -20,10 +20,29 @@
         </div>
       </div>
     </nav>
-
-    <div class="jumbotron" style="margin-bottom: 0px; background-color: #fff68f; color: #0099cc; height: 100px;">
+<!--
+    <div class="jumbotron" style="margin-bottom: 0px; background-color: #fff68f; color: #0099cc; height: 200px;">
       <h2 class="text-center" id="headText" style="margin-top: 0;font-size:25px; font-weight: 300;"></h2>
+    </div> -->
+
+
+        <div class="jumbotron" style="margin-bottom: 0px; background-color: #fff68f; color: #0099cc; height: 200px;">
+          <h2 class="text-center" id="headText" style="margin-top: 0;font-size:25px; font-weight: 300;"></h2>
+
+    <div class="row" id="headRow">
+      <div class="col-md-12" id="colText">
+        <ul class="list-inline" id="list_item">
+          <li><i class="fa fa-sun-o" aria-hidden="true" style="color: #0099cc; font-size: 3em;"></i></li>
+          <li><i class="fa fa-cloud" aria-hidden="true" style="color: #0099cc;font-size: 3em;"></i></li>
+          <li><i class="fa fa-tint" aria-hidden="true" style="color: #0099cc;font-size: 3em;"></i></li>
+          <li><i class="fa fa-umbrella" aria-hidden="true" style="color: #0099cc;font-size: 3em;"></i></li>
+          <li><i class="fa fa-bolt" aria-hidden="true" style="color: #0099cc;font-size: 3em;"></i></li>
+        </ul>
+      </div>
     </div>
+
+</div>
+
 
 
     <div class="container">
@@ -58,11 +77,10 @@
     $(document).ready(function(){
         setTimeout(function(){
           $("#headText").typed({
-            strings: ["Get Current Weather for Any City"],
-            typeSpeed: 0
-
+            strings: ["Get Current Weather for Any City."],
+            typeSpeed: 30
           })
-        });
+        }, 0);
     });
 
     </script>
