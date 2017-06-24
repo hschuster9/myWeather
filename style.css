@@ -73,8 +73,9 @@ input[type='text']{
 #showWeather {
   width: 40%;
   margin:auto;
-  color: #191970;
-  border-radius: 10px;
+  /*color: #191970;*/
+  color: #293e6a;
+  border-radius: 6px;
   background: url('https://spaceplace.nasa.gov/review/blue-sky/bluesky.en.png') no-repeat;
   background-size: auto;
 }
