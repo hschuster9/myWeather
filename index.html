@@ -20,28 +20,29 @@
         </div>
       </div>
     </nav>
-<!--
-    <div class="jumbotron" style="margin-bottom: 0px; background-color: #fff68f; color: #0099cc; height: 200px;">
-      <h2 class="text-center" id="headText" style="margin-top: 0;font-size:25px; font-weight: 300;"></h2>
-    </div> -->
 
-
-        <div class="jumbotron" style="margin-bottom: 0px; background-color: #fff68f; color: #0099cc; height: 200px;">
+        <div class="jumbotron" style="margin-bottom: 0px; background-color: #fff68f; color: #0099cc; height: 180px;">
           <h2 class="text-center" id="headText" style="margin-top: 0;font-size:25px; font-weight: 300;"></h2>
 
     <div class="row" id="headRow">
       <div class="col-md-12" id="colText">
         <ul class="list-inline" id="list_item">
-          <li><i class="fa fa-sun-o" aria-hidden="true" style="color: #0099cc; font-size: 3em;"></i></li>
-          <li><i class="fa fa-cloud" aria-hidden="true" style="color: #0099cc;font-size: 3em;"></i></li>
-          <li><i class="fa fa-tint" aria-hidden="true" style="color: #0099cc;font-size: 3em;"></i></li>
-          <li><i class="fa fa-umbrella" aria-hidden="true" style="color: #0099cc;font-size: 3em;"></i></li>
-          <li><i class="fa fa-bolt" aria-hidden="true" style="color: #0099cc;font-size: 3em;"></i></li>
+          <li id="sun"><i class="fa fa-sun-o" aria-hidden="true" style="color: #0099cc; font-size: 3em;"></i></li>
+          <li id="cloud"><i class="fa fa-cloud" aria-hidden="true" style="color: #0099cc;font-size: 3em;"></i></li>
+          <li id="rain"><i class="fa fa-tint" aria-hidden="true" style="color: #0099cc;font-size: 3em;"></i></li>
+          <li id="umbrella"><i class="fa fa-umbrella" aria-hidden="true" style="color: #0099cc;font-size: 3em;"></i></li>
+          <li id="bolt"><i class="fa fa-bolt" aria-hidden="true" style="color: #0099cc;font-size: 3em;"></i></li>
         </ul>
       </div>
     </div>
 
 </div>
+
+
+
+
+
+
 
 
 
@@ -75,13 +76,19 @@
 
     <script>
     $(document).ready(function(){
+
         setTimeout(function(){
+
           $("#headText").typed({
+
             strings: ["Get Current Weather for Any City."],
             typeSpeed: 30
           })
         }, 0);
-    });
+
+});
+
+
 
     </script>
 
