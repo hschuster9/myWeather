@@ -20,7 +20,7 @@ function getWeather(){
         var widget = showResults(data);
 
         $('#showWeather').html(widget);
-        $("#icon").html("<img style='height: 80px; margin: auto; display:block; margin-top: 10px;' class='weatherIcon' src='http://openweathermap.org/img/w/" + data.weather[0].icon + ".png' alt='Icon depicting current weather.'>")
+        $("#icon").html("<img style='height: 80px; margin: auto; display:block; margin-top: 10px;' class='weatherIcon' src='https://openweathermap.org/img/w/" + data.weather[0].icon + ".png' alt='Icon depicting current weather.'>")
         $('#city').val("");
 
       }
