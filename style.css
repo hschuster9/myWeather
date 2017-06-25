@@ -32,13 +32,6 @@ body{
   display: inline-block;
   /*margin-top: -15px;*/
 }
-/*
-#headText1 {
-  color: white;
-  padding-top: 30px;
-
-  margin-bottom: 20px;
-}*/
 
 ul#list_item {
   color: white;
@@ -73,7 +66,6 @@ input[type='text']{
 #showWeather {
   width: 40%;
   margin:auto;
-  /*color: #191970;*/
   color: #293e6a;
   border-radius: 6px;
   /*background: url('https://spaceplace.nasa.gov/review/blue-sky/bluesky.en.png') no-repeat;*/
@@ -82,5 +74,5 @@ input[type='text']{
 
 .results {
   font-family: Tahoma, Geneva, sans-serif;
-  font-size: 18px;
+  font-size: 13px;
 }
