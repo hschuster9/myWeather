@@ -76,6 +76,11 @@ input[type='text']{
   /*color: #191970;*/
   color: #293e6a;
   border-radius: 6px;
-  background: url('https://spaceplace.nasa.gov/review/blue-sky/bluesky.en.png') no-repeat;
+  /*background: url('https://spaceplace.nasa.gov/review/blue-sky/bluesky.en.png') no-repeat;*/
   background-size: auto;
+}
+
+.results {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 18px;
 }

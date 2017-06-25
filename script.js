@@ -4,53 +4,42 @@ $(document).ready(function(){
   })
 })
 
-
 function getWeather(){
   var city = $("#city").val();
   var state = $("#state").val();
   // var url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&APPID=927340b14919bfd5a15c4c55b3888520`
   var url = `https://api.wunderground.com/api/67e285089e02a77a/conditions/q/${state}/${city}.json`
 
-
-
-  if(city != ""){
+  if(city != "" ){
 
     $.ajax({
       url: url,
       type: "GET",
       dataType: "jsonp",
       success: function(data){
-        //pass function into variable
         var widget = showResults(data);
 
         $('#showWeather').html(widget);
-        $("#icon").html("<img style='height: 80px; margin: auto; display:block; margin-top: 10px;' class='weatherIcon' src='https://openweathermap.org/img/w/" + data.weather[0].icon + ".png' alt='Icon depicting current weather.'>")
         $('#city').val("");
+        $('#state').val("");
 
       }
     })
 
-  } else {
-    $("#error").html("<div class='alert alert-danger' id='errorCity'><a href='' class='close' data-dismiss='alert' aria-label='close'>&times</a>City field required</div>")
+  }
+    else {
+      $("#error").html("<div class='alert alert-danger' id='errorCity'><a href='' class='close' data-dismiss='alert' aria-label='close'>&times</a>City field required</div>")
   }
 }
 
-
-//return value of parameter - temp
 function showResults(data){
-  // var iconCode = data.weather[0].icon;
-  // // var iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";
-  // var iconUrl = "https://openweathermap.org/img/w/" + iconCode + ".png";
 
-  // return "<h3 style='font-size:25px; padding-top: 25px;' class='text-center'>"+data.name+"</h3>"+
-  //         // "<p style='padding-left:40px; padding-top: 50px;'><strong>Condition</strong>: "  +data.weather[0].description+"</p>"+
-  //           "<p style='padding-left:40px; padding-top: 50px;'><strong>Condition</strong>: "  +data.weather[0].description+"</p>"+
-  //         "<p style='padding-left:40px;'><strong>Temperature</strong>: "+data.main.temp+" &deg;F</p>"+
-  //         "<p style='padding-left:40px;'><strong>High</strong>: "+data.main.temp_max+" &deg;F</p>"+
-  //         "<p style='padding-left:40px;'><strong>Low</strong>: "+data.main.temp_min+" &deg;F</p>"+
-  //         "<p style='padding-left:40px;'><strong>Humidity</strong>: " +data.main.humidity+"%</p>"+
-  //         "<p style='padding-left:40px; padding-bottom: 30px;'><strong>Wind</strong>: " +data.wind.speed+"mph</p>"
+  return  "<h3 style='font-size:27px; padding-top: 35px;' class='text-center results'>"+data.current_observation.display_location.full+" ("+data.current_observation.display_location.zip+")</h3>"+
+          "<img src="+data.current_observation.icon_url+" style='height: 50px; width: 50px; margin: auto; display:block;' class='results'>"+
+          "<p style='font-size: 56px; color: #FF7040'; class='text-center results'><strong>"+data.current_observation.temp_f+" &degF</strong> </p>"+
+          "<p style='padding-top: 30px;' class='text-center results'><strong>Condition</strong>: "+data.current_observation.weather+"</p>"+
+          "<p class='text-center results'><strong>Humidity</strong>: "+data.current_observation.relative_humidity+" &degF</p>"+
+          "<p  class='text-center results'><strong>Wind</strong>: "+data.current_observation.wind_mph+"mph, "+data.current_observation.wind_dir+"</p>"
 
-  return "<h3 style='font-size:25px; padding-top: 25px;' class='text-center'>"+data.current_observation.display_location.city+"</h3>"
 
-}
+  }
