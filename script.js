@@ -35,7 +35,8 @@ function getWeather(){
 //return value of parameter - temp
 function showResults(data){
   var iconCode = data.weather[0].icon;
-  var iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";
+  // var iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";
+  var iconUrl = "https://openweathermap.org/img/w/" + iconCode + ".png";
 
   return "<h3 style='font-size:25px; padding-top: 25px;' class='text-center'>"+data.name+"</h3>"+
           "<p style='padding-left:40px; padding-top: 50px;'><strong>Condition</strong>: "  +data.weather[0].description+"</p>"+
