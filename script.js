@@ -38,6 +38,6 @@ function showResults(data){
           "<p style='font-size: 40px; color: #FF7040'; class='text-center results'><strong>"+data.current_observation.temp_f+" &degF</strong> </p>"+
           "<p style='padding-top: 22px;' class='text-center results'><strong>Condition</strong>: "+data.current_observation.weather+"</p>"+
           "<p class='text-center results'><strong>Humidity</strong>: "+data.current_observation.relative_humidity+" &degF</p>"+
-          "<p  class='text-center results'><strong>Wind</strong>: "+data.current_observation.wind_mph+"mph, "+data.current_observation.wind_dir+"</p>"
+          "<p class='text-center results'><strong>Wind</strong>: "+data.current_observation.wind_mph+"mph, "+data.current_observation.wind_dir+"</p>"
 
   }
