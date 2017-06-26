@@ -1,6 +1,6 @@
 # MyWeather
 
-https://hschuster9.github.io/weatherAPI/
+https://hschuster9.github.io/myWeather/
 
 ## Description
 * MyWeather allows users to search cities for the current weather.
@@ -8,7 +8,8 @@ https://hschuster9.github.io/weatherAPI/
 
 ## Technologies Used
 * HTML/CSS, Javascript, jQuery
-* AJAX/JSON
+* AJAX
+* JSON
 * Third Party API Integration  - Weather Underground
 
 ## User Stories
